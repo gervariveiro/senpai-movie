@@ -16,6 +16,11 @@
     box-sizing: border-box;
     }
 
+    body{
+        height: auto;
+        width: auto;
+    }
+
     .container{
         display: grid;
         grid-template-columns: 1fr;
@@ -99,6 +104,37 @@
         }
 
 
+
+@media (min-width: 768px) {
+
+    .container{
+            grid-template-columns: 0.9fr 1.1fr;
+            grid-template-rows: 1fr;
+            grid-template-areas: "divform mainfoto";                        
+    }
+
+    .divform{
+        padding-top: 25%;
+    }
+
+    .login-now{
+        margin-bottom: 10%;
+    }
+
+    .footer{
+        display: none;
+    }
+
+}
+
+@media (max-width: 1024px) {
+
+
+.footer2{
+}
+
+}
+
     </style>
 </head>
         
@@ -106,7 +142,9 @@
         <body>
             <div class="container">
                 <div class= "mainfoto">
-                    <input type="submit" class="signup" value="SIGN UP">        
+                    <input type="submit" class="signup" value="SIGN UP">
+                <div class="footer2"></div>
+            
                 </div>
                 <div class="divform">
                     <form class="form">
@@ -121,10 +159,5 @@
                     <p>@2021</p>
                 </div>
             </div>
-        </body>
-        </html>
-</head>
-<body>
-    
-</body>
+    </body>
 </html>
