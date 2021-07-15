@@ -5,172 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Senpai-Movie</title>
-    <style>
+    <link href="Login.css" type="text/css" rel="stylesheet"/>
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300;1,400;1,500&display=swap');
-
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    }
-
-   html, body{
-       margin: 0;
-       padding: 0;
-   }
-
-    .container{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 2fr 2fr 1.9fr;
-        grid-template-areas: "mainfoto"
-                             "divform"
-                             "footer";
-    }
-
-    .mainfoto{
-        grid-area: mainfoto;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        background: url(assets/friki.jpg);
-        background-position:center;
-        background-size: cover;
-        }
-
-    .signup{
-        background-color: #3177FF;
-        color: white;
-        width: 84px;
-        height: 30px;
-        margin: 10px 10px 0 0;
-        border-radius: 5px;
-        font-weight: 400;
-        font-family: "Roboto" , sans-serif;
-    }
-
-    .divform{
-        grid-area: divform;
-        background-color:#040713;
-        padding-top: 10%;
-    }
-
-    .forminput{
-        display: flex;
-        justify-content: space-between;
-        width: 90%;
-        height: 45px;
-        margin: 10px;
-        margin-left: 15px;
-        border-radius: 5px;
-        padding-left:10px;
-        color: #3177FF;
-        font-family: "Roboto";
-        font-weight: bold;
-        font-size: 14px;
-        line-height: 16px;
-        line-height: 100%;
-    }
-
-
-    .divlogin-now{
-        display: flex;
-        justify-content: center;
-    }
-
-    .login-now{
-            background-color: #3177FF;
-            color: white;
-            width: 195px;
-            height: 30px;
-            margin-top: 40px;
-            border-radius: 5px;
-            font-weight: 400;
-            font-family: "Roboto" , sans-serif;
-    }
-    
-    .footer{
-            grid-area: footer;
-            display: flex;
-            justify-content: center;
-            align-items: flex-end;
-            padding-bottom: 6%;
-            background-color: #040713;
-            color: white;
-            font-family: "Roboto" , sans-serif;
-            font-size: 12px;
-        }
-
-    .footer2{
-        display: none;
-    }
-
-@media (min-width: 768px) {
-
-    .container{
-            height: 448px;
-            grid-template-columns: 0.9fr 1.1fr;
-            grid-template-rows: 1fr;
-            grid-template-areas: "divform mainfoto";                        
-    }
-
-    .divform{
-        padding-top: 25%;
-    }
-
-    .login-now{
-        margin-bottom: 10%;
-    }
-
-    .footer{
-        display: none;
-    }
-
-}
-
-@media (min-width: 1024px) {
-
-.container{
-    height: 972px;
-}
-
-.footer2{
-    display: inline;
-    margin-right: 70%;
-    margin-bottom: 5%;
-    align-self: flex-end;
-    color: white;
-    font-family: "Roboto";
-    font-style: bold;
-    font-size: 14px;
-}
-}
-    </style>
-</head>
-        
-        
-        <body>
-            <div class="container">
-                <div class= "mainfoto">
-                    <div class="footer2">
-                        <h5>@2021</h5>
-                    </div>
-                    <input type="submit" class="signup" value="SIGN UP">
+</head>  
+    <body>
+        <div class="container">
+            <div class= "mainfoto">
+                <div id="footer2">
+                    <h5>@2021</h5>
                 </div>
-                <div class="divform">
-                    <form class="form">
-                            <input type= "email" class= "forminput" value="Email">
-                            <input type= "name" class= "forminput" value="Password">
-                    </form>
-                    <div class="divlogin-now">
-                        <input type="submit" class="login-now" value="LOGIN NOW">        
-                    </div>      
-                </div>   
-                <div class="footer">
-                    <p>@2021</p>
-                </div>
+                <input type="submit" class="signup" value="SIGN UP">
             </div>
+            <div class="divform">
+                <form class="form">
+                    <input type= "email" class= "forminput" value="Email">
+                    <input type= "name" class= "forminput" value="Password">
+                </form>
+                <div class="divlogin-now">
+                    <input type="submit" class="login-now" value="LOGIN NOW">        
+                </div>      
+            </div>   
+            <div id="footer">
+                <p>@2021</p>
+            </div>
+        </div>
     </body>
 </html>

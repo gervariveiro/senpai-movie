@@ -1,312 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Senpai-Movie</title>
-
-    <style>
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300;1,400;1,500&display=swap');
-        
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    }
-
-
-    .container{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 2fr 2fr 0.5fr;
-        grid-template-areas:"fotoyform1"
-                            "form2"
-                            "footer";
-    }
-        
-        .fotoyform1{
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 1.25fr 0.5fr;
-            grid-template-areas: "mainfoto"
-                                 "form1"
-                                 "footer" ;
-
-        }
-
-        .mainfoto{
-            display: flex;
-            justify-content: flex-end;
-            background: url(assets/friki.jpg);
-            background-position:center;
-            background-size: cover;
-        }
-
-        .login1{
-            display: flex;
-            background-color: #3177FF;
-            color: white;
-            text-align: center;
-            width: 84px;
-            height: 30px;
-            margin: 10px 10px 0 0;
-            padding-top: 5px;
-            padding-left: 20px;
-            border-radius: 5px;
-            font-weight: 400;
-            font-family: "Roboto";
-            font-size: 14px;
-            font-style: normal;
-        
-        }
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Senpai-Movie</title>
+        <link href="Signup.css" type="text/css" rel="stylesheet"/>
 
 
 
-        .form1{
-            background-color:#040713;
-        }
-
-        .forminput{
-            display: flex;
-            justify-content: space-between;
-            width: 90%;
-            height: 45px;
-            margin: 10px;
-            margin-left: 15px;
-            border-radius: 5px;
-            padding-left: 10px;
-            color: #3177FF;
-            font-family: "Roboto" , sans-serif;
-            font-weight: bold;
-            font-size: 14px;
-            line-height: 16px;
-        }
-
-        .form2{
-            grid-area: form2;
-            display: flex;
-            flex-direction: column;
-            background-color: #040713;
-            color: white;
-        }
-        .choose{
-            background-color: #040713;
-            text-align: center;
-            padding-top: 30px;
-            flex-direction: column;
-            font-family: "Roboto";
-            line-height: 21px;
-            font-size: 18px;
-        }
-
-        .choose p{
-            display: flex;
-            justify-content: center;
-            padding-right: 64px;
-            padding-left: 64px;
-            padding-top: 30px;
-            font-size: 11px;
-            font-weight: 400;
-        } 
-
-        .inputform2{
-            display: inline-block;
-            text-align: left;
-            padding-top: 15px;
-            padding-left: 30px;
-            line-height: 40px;
-            font-size: 18px;
-            font-weight: bold;
-            font-family: "Roboto";
-
-        }
-
-        .divsignup-now{
-            display: flex;
-            justify-content: center;
-        }
-    
-        .signup-now{
-            background-color: #3177FF;
-            color: white;
-            width: 195px;
-            height: 30px;
-            margin-top: 40px;
-            border-radius: 5px;
-            font-weight: 400;
-            font-size: 14px;
-            font-family: "Roboto" , sans-serif;
-        }
+    </head>
 
 
-        .footer{
-            grid-area: footer;
-            display: flex;
-            justify-content: center;
-            align-items: flex-end;
-            padding-bottom: 6%;
-            background-color: #040713;
-            color: white;
-            font-family: "Roboto" , sans-serif;
-            font-size: 12px;
-        }
-
-
-        @media (max-width: 768px) {
-            .login2{
-                display: none;
-            }
-        }
-
-        @media (min-width: 768px) {
-        
-        .container{
-        grid-template-columns: 1fr;
-        grid-template-rows: 2fr 2fr 1.5fr;
-        grid-template-areas:"fotoyform1"
-                            "form2"
-                            "footer";
-        }
-
-
-        .fotoyform1{
-            display: flex;
-            position: relative;
-            background: url(https://images.pexels.com/photos/4048090/pexels-photo-4048090.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
-            background-size: 75% auto;
-            background-position: center;
-            
-        }
-
-        .login2{
-            display: flex;
-            background-color: #3177FF;
-            color: white;
-            text-align: center;
-            width: 84px;
-            height: 30px;
-            margin: 10px 10px 0 45%;
-            padding-top: 5px;
-            padding-left: 20px;
-            border-radius: 5px;
-            font-weight: 400;
-            font-family: "Roboto";
-            font-size: 14px;
-            font-style: normal;
-        }        
-
-        .form1{
-            background-color: #2A2828;
-            width:45%;
-        }
-        
-        .mainfoto{
-            display: none;
-        }
-
-        .inputform2{
-            display: inline-block;
-            text-align: left;
-            align-self: center;
-            padding-top: 30px;
-            padding-left: 20px;
-            line-height: 40px;
-            font-size: 18px;
-            font-weight: bold;
-            font-family: "Roboto" , sans-serif;
-
-        }
-         
-    }
-
-         @media (min-width: 1024px) {
-
-            .container{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 2fr 1.4fr 0.8fr;
-        grid-template-areas:"fotoyform1"
-                            "form2"
-                            "footer";
-    }
-
-
-        .fotoyform1{
-            position: relative;
-            display: flex;
-            background: url(https://images.pexels.com/photos/4048090/pexels-photo-4048090.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
-            background-size: 75% auto;
-            background-position: center;
-    }
-
-        
-        .login2{
-                display: flex;
-                background-color: #3177FF;
-                color: white;
-                text-align: center;
-                width: 84px;
-                height: 30px;
-                margin: 10px 10px 0 2.5%;
-                padding-top: 5px;
-                padding-left: 20px;
-                border-radius: 5px;
-                font-weight: 400;
-                font-family: "Roboto";
-                font-size: 14px;
-                font-style: normal;
-            }    
-
-    
-        }
-    </style>
-</head>
-
-
-<body>
-    <div class="container">
-        <div class="fotoyform1">
-            <div class= "mainfoto">
-                <div class="login1">LOGIN<a href=></a></div>
+    <body>
+        <div class="container">
+            <div class="photoyform1">
+                <div class= "mainphoto">
+                    <div class="login1">LOGIN<a href=></a></div>
+                </div>
+                <div class="form1">
+                        <form class="form">
+                            <input type= "name" class= "forminput" value="Name">
+                            <input type= "country" class= "forminput" value="Country">
+                            <input type= "pwd" class= "forminput" value="Password">
+                            <input type= "confirm pwd" class= "forminput" value="Confirm Password">
+                        </form>
+                </div>
+                <div class="login2">LOGIN<a href=></a></div>
             </div>
-            <div class="form1">
-                    <form class="form">
-                        <input type= "name" class= "forminput" value="Name">
-                        <input type= "country" class= "forminput" value="Country">
-                        <input type= "pwd" class= "forminput" value="Password">
-                        <input type= "confirm pwd" class= "forminput" value="Confirm Password">
-                    </form>
+            <div class="form2">
+                <div class= "choose">
+                    <h3>Choose your plan</h3>
+                    <p>Acording with your plan you will have an specific<br>catalogue of movies</p>
+                </div>   
+                <div class="inputform2">
+                    <input type="radio" name="latino" id="latino">
+                    <label for="latino">Latino +</label> <br/>
+                    <input type="radio" name="international" id="international">
+                    <label for="international">International +</label> <br/>
+                    <input type="radio" name="art" id="art">
+                    <label for="latino">Art +</label> <br/>
+                </div>
+                <div class="divsignup-now">
+                    <input type="submit" class="signup-now" value="SIGN UP NOW">        
+                </div>
             </div>
-            <div class="login2">LOGIN<a href=></a></div>
-        </div>
-        <div class="form2">
-            <div class= "choose">
-                <h3>Choose your plan</h3>
-                <p>Acording with your plan you will have an specific<br>catalogue of movies</p>
-            </div>   
-            <div class="inputform2">
-                <input type="radio" name="latino" id="latino">
-                <label for="latino">Latino +</label> <br/>
-                <input type="radio" name="international" id="international">
-                <label for="international">International +</label> <br/>
-                <input type="radio" name="art" id="art">
-                <label for="latino">Art +</label> <br/>
-            </div>
-            <div class="divsignup-now">
-                <input type="submit" class="signup-now" value="SIGN UP NOW">        
+            <div id="footer">
+                <p>@2021</p>
             </div>
         </div>
-        <div class="footer">
-            <p>@2021</p>
-        </div>
-    </div>
-    
-
-
-</body>
+    </body>
 </html>
 
 
